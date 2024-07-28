@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Calculation {
+public class Variables {
     public static void main(String[] args) {
         //input
         Scanner sc = new Scanner(System.in);
