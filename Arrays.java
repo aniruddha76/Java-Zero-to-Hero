@@ -73,5 +73,31 @@ public class Arrays {
                 System.out.print("Found at index: " + i);
             }
         }
+
+        //Assignment 2
+        //Find max and min value in an Array
+        
+        System.out.print("Enter Array size: ");
+        int size = sc.nextInt();
+        int arrayNumbers[] = new int[size];
+
+        System.out.println("Enter Array Elements:");
+        for(int i = 0; i < arrayNumbers.length; i++){
+            arrayNumbers[i] = sc.nextInt();
+        }
+
+        
+        int min = arrayNumbers[0];
+        int max = arrayNumbers[1];
+
+        for(int i = 0; i < arrayNumbers.length; i++){
+            if(arrayNumbers[i] > max){
+                max = arrayNumbers[i];
+            } else if(arrayNumbers[i] < min) {
+                min = arrayNumbers[i];
+            }
+        }
+
+        System.out.println("Max value is: " + max + " Min value is: " + min);
     }
 }
